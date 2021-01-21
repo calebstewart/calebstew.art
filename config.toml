@@ -2,7 +2,7 @@ theme = "awesome-identity"
 baseURL = "https://calebstew.art"
 title = "$ uname -a"
 publishDir = "docs"
-
+disableKinds = ["taxonomy", "term"]
 
 ## Profile Configurations
 [params.profile]
