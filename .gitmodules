@@ -1,0 +1,3 @@
+[submodule "themes/awesome-identity"]
+	path = themes/awesome-identity
+	url = https://github.com/calebstewart/hugo-awesome-identity
