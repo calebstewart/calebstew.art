@@ -60,6 +60,11 @@
     color: rgb(182,38,44);
   }
 
+  // This is a dumb solution, tbh
+  .header .left:first-letter {
+    color: rgb(182,38,44);
+  }
+
   .intro {
 
     text-align: center;
