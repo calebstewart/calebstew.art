@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+{{ partial "opengraph.html" . }}
+{{ with .Site.Params.meta.description }}
+    <meta name="description" content="{{ . }}" />
+{{ end }}
+{{ with .Site.Params.meta.keywords }}
+    <meta name="keywords" content="{{ . }}" />
+{{ end }}
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ .Site.Title }}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura:400,700">
+
+{{ $options := (dict "targetPath" "css/resume.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "sass/resume.scss" | toCSS $options | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <!-- <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <div class="wrap resume">
+      <section class="intro">
+        <a href="/">
+          <h1 class="name">{{ .Site.Params.profile.firstname }} <b>{{ .Site.Params.profile.lastname }}</b></h1>
+        </a>
+        <p class="title">{{ .Site.Params.profile.title }}</p>
+        <small class="location">{{ .Site.Params.profile.location }}</small>
+        {{ with .Site.Params.contacts -}}
+        <section class="contacts">
+          {{- range $service, $id := . -}}
+            {{- if (eq $service "github") }}
+          <a href="https://github.com/{{ $id }}">
+            <i class="fab fa-github" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "twitter") }}
+          <a href="https://twitter.com/{{ $id }}">
+            <i class="fab fa-twitter" aria-hidden="true"></i> @{{ $id }}
+          </a>
+            {{- else if (eq $service "facebook") }}
+          <a href="https://facebook.com/{{ $id }}">
+            <i class="fab fa-facebook" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "linkedin") }}
+          <a href="https://linkedin.com/in/{{ $id }}">
+            <i class="fab fa-linkedin" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "xing") }}
+          <a href="https://xing.com/profile/{{ $id }}">
+            <i class="fab fa-xing" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "instagram") }}
+          <a href="https://instagram.com/{{ $id }}">
+            <i class="fab fa-instagram" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "stackoverflow") }}
+          <a href="https://stackoverflow.com/users/{{ $id }}">
+            <i class="fab fa-stack-overflow" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "medium") }}
+          <a href="https://medium.com/{{ $id }}">
+            <i class="fab fa-medium" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "email") }}
+          <a href="mailto:{{ $id }}">
+            <i class="fas fa-envelope" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "keybase") }}
+          <a href="https://keybase.io/{{ $id }}">
+            <i class="fab fa-keybase" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "gitlab") }}
+          <a href="https://gitlab.com/{{ $id }}">
+            <i class="fab fa-gitlab" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "devto") }}
+          <a href="https://dev.to/{{ $id }}">
+            <i class="fab fa-dev" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- else if (eq $service "hackerrank") }}
+          <a href="https://hackerrank.com/{{ $id }}">
+            <i class="fab fa-hackerrank" aria-hidden="true"></i> {{ $id }}
+          </a>
+            {{- end }}
+            &nbsp;|&nbsp;
+          {{- end }}
+        </section>
+        {{- end }}
+      </section>
+
+      <section class="summary">
+        <div class="header">
+          <h2 class="left">Summary</h2>
+          <h2 class="right">
+            <div class="tooltip">
+              <a href="/resume.pdf"><i class="fa fa-file-pdf"></i></a>
+              <span class="message">Download PDF</span>
+            </div>
+            <div class="tooltip">
+              {{ $latex := resources.Get "resume.tex" | resources.ExecuteAsTemplate "resume.tex" . }}
+              <a href="{{ $latex.RelPermalink }}"><i class="fa fa-code"></i></a>
+              <span class="message">Download LaTex</span>
+            </div>
+          </h2>
+        </div>
+        <hr><br/>
+        {{ .Content }}
+      </section>
+
+      <section class="experiences">
+        <h2 class="header">Experience</h2><hr>
+
+        {{ range .Site.Data.experiences }}
+        <div class="experience">
+          <div class="row">
+            <div class="employer">{{ .employer }}</div>
+            <div class="location">{{ .location }}</div>
+          </div>
+          <div class="row">
+            <div class="role">{{ .role }}</div>
+            <div class="dates">{{ .start }} - {{ .end }}</div>
+          </div>
+          <div class="row">
+            <ul>
+          {{ range .details }}
+              <li>{{ . }}</li>
+          {{ end }}
+            </ul>
+          </div>
+        </div>
+        {{- end }}
+      </section>
+
+      <section class="certifications">
+        <h2 class="header">Certifications</h2><hr >
+
+        <div class="certlist">
+          {{ range .Site.Data.certifications }}
+          <div class="row">
+            <div class="date">{{ .date }}</div>
+            <div class="description">
+              <strong>{{ .name }}</strong>
+              , Credential ID: {{ .id }}
+            </div>
+            <div class="org">{{ .org }}</div>
+          </div>
+          {{ end }}<br/>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2 class="header">Notable Projects</h2><hr>
+
+        {{ range .Site.Data.projects }}
+        <div class="experience">
+          <div class="row">
+            <div class="employer">{{ .name }}</div>
+            <div class="location">{{ .link | markdownify }}</div>
+          </div>
+          <div class="row">
+            <div class="role">{{ .role }}</div>
+            <div class="dates">{{ .tools }}</div>
+          </div><br/>
+          <div class="row">
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{- end }}
+      </section>
+
+      <section class="education">
+        <h2 class="header">Education</h2><hr>
+
+        {{ range .Site.Data.education }}
+        <div class="experience">
+          <div class="row">
+            <div class="employer">{{ .university }}</div>
+            <div class="location">{{ .location | markdownify }}</div>
+          </div>
+          <div class="row">
+            <div class="role">{{ .degree }}</div>
+            <div class="dates">{{ .start }} - {{ .end }}</div>
+          </div>
+        </div><br/>
+        {{- end }}
+      </section>
+    </div>
+{{ partial "footer.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ partial "crisp.html" . }}
+  </body>
+</html>

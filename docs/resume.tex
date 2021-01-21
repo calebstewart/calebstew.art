@@ -1,0 +1,254 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Caleb}{Stewart}
+\position{Software Engineer{\enskip\cdotp\enskip}Penetration Tester{\enskip\cdotp\enskip}Reverse Engineer}
+\address{College Park, MD}
+
+
+\email{caleb.stewart94@gmail.com}
+
+\github{calebstewart}
+
+\gitlab{caleb.stewart}
+
+\linkedin{calebjstewart}
+
+\twitter{calebjstewart}
+
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Caleb Stewart~~~·~~~Résumé}
+  {\thepage}
+
+\cvsection{Summary}
+\begin{cvparagraph}
+
+Software Engineering and Cyber Security Expert with Electrical Engineering background. More than 10 years software development expertience in many languages from x86 and ARM Assembly to Python. Experience in SOC, Incident Response and Red Team Lead roles. Passion for building elegant frameworks to automate and simplify operations.
+
+
+\end{cvparagraph}
+
+\cvsection{Work Experience}
+\begin{cventries}
+
+
+  \cventry
+    {Mission Element Lead}
+    {Coast Guard Cyber Protection Team}
+    {Washington, DC}
+    {Nov 2018 - Jun 2019}
+    {
+      \begin{cvitems}
+        \item{First responder for numerous network security incidents threatening National Critical Infrastructure}
+        \item{Developed SOP and training requirements for incoming personnel.}
+        \item{Procured, configured and deployed state of the art incident response hardware platform.}
+      \end{cvitems}
+    }
+
+
+  \cventry
+    {Infrastructure Support Branch Lead}
+    {Coast Guard Security Operations Center}
+    {Washington, DC}
+    {Nov 2017 - Nov 2018}
+    {
+      \begin{cvitems}
+        \item{Operation and Maintenance of all network defence infrastructure including Intrusion Prevention and Detection Systems, Data‑Loss Prevention, Web Content Filter, and Firewalls.}
+        \item{Battle Watch Captain supervising security and operational control over all IT systems across the Coast Guard.}
+      \end{cvitems}
+    }
+
+
+  \cventry
+    {Combat Information Center Officer}
+    {Coast Guard Cutter Bertholf}
+    {Alameda, CA}
+    {May 2016 - Nov 2017}
+    {
+      \begin{cvitems}
+        \item{Responsible for combat and communications equiment and operational planning.}
+        \item{Assistant Command Security Officer ‑ managed physical, information and operational security programs for entire crew.}
+      \end{cvitems}
+    }
+
+
+  \cventry
+    {Internship}
+    {National Security Agency}
+    {Fort Meade, MD}
+    {Jun 2015 - Jul 2015}
+    {
+      \begin{cvitems}
+        \item{Applied systems‑programming expertise to reverse engineer unknown software and catalague all code‑paths for further analysis.}
+        \item{Performed static and dynamic analysis on malware to identify and report all observed activity.}
+      \end{cvitems}
+    }
+
+
+
+\end{cventries}
+
+\cvsection{Certifications}
+\begin{cvhonors}
+
+  \cvhonor
+    {Offensive Security Certified Professional (OSCP)}
+    {Certification ID: OS-101-017541}
+    {Offensive Security}
+    {Dec 2018}
+
+  \cvhonor
+    {Exploit Researcher and Advanced Penetration Tester (GXPN)}
+    {Certification ID: 9192230}
+    {GIAC}
+    {Oct 2020}
+
+  \cvhonor
+    {Offensive Security Certified Expert (OSCE)}
+    {Certification ID: OS-CTP-11344}
+    {Offensive Security}
+    {Dec 2019}
+
+  \cvhonor
+    {Offensive Security Web Expert (OSWE)}
+    {Certification ID: OS-AWAE-02880}
+    {Offensive Security}
+    {Feb 2020}
+
+  \cvhonor
+    {Certified Professional Penetration Tester (eCPPT)}
+    {Certification ID: 9831814}
+    {eLearnSecurity}
+    {Mar 2020}
+
+  \cvhonor
+    {Offensive Security Wireless Professional (OSWP)}
+    {Certification ID: OS-BWA-036075}
+    {Offensive Security}
+    {Feb 2020}
+
+  \cvhonor
+    {Certified Information Systems Security Professional (CISSP)}
+    {Certification ID: 703304}
+    {ISC2}
+    {Dec 2018}
+
+
+\end{cvhonors}
+
+\cvsection{Notable Projects}
+\begin{cventries}
+
+  \cventry
+    {Creator}
+    {pwncat}
+    {github.com/calebstewart/pwncat}
+    {Python, C, C\#}
+    {Full featured agentless C2 platform built on top of a basic shell providing stable interactive sessions as well as an extensive pluggable API for automated enumeration, persistence, privilege escalation, and report generation.}
+
+  \cventry
+    {Co-Creator}
+    {Katana}
+    {github.com/johnhammond/katana}
+    {Python}
+    {Automated Capture the Flag (CTF) problem solver. Implements a multi‑threaded problem identification and solution framework capable of automatically solving cyber security challenges from a variety of categories.}
+
+  \cventry
+    {Lead System Engineer, Challenge Developer}
+    {CTF4Hire}
+    {github.com/ctf4hire}
+    {Python, Kubernetes, C, Assembly, GKE}
+    {Designed and implemented scalable automated event infrastructure utilizing Kubernetes on Google Cloud Platform supporting over 5000 simultaneous players with personally assigned challenge machines. Held events for multiple worldwide conferences and companies including HackerOne, BSidesBoston and GrimmCon.}
+
+  \cventry
+    {Creator}
+    {StewieOS}
+    {github.com/calebstewart/stewieos}
+    {x86 Assembly, C}
+    {Demonstrated expertise in low‑level software and hardware programming. Designed and implemented POSIX‑like kernel for the x86 family of processors. Full multitasking support. Custom device drivers for common hardware as well as implementations of common userland utilities.}
+
+
+\end{cventries}
+
+\cvsection{Education}
+\begin{cventries}
+
+  \cventry
+    {B.S. In Electrical and Computer Engineering}
+    {U.S. Coast Guard Academy}
+    {New London, CT}
+    {Jun 2012 - May 2016}
+    {
+    }
+
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}

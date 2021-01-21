@@ -10,6 +10,7 @@ disableKinds = ["taxonomy", "term"]
   firstname = "Caleb"
   lastname = "Stewart"
   title = "Software Engineer, Penetration Tester, Reverse Engineer"
+  location = "College Park, MD"
   bio = """I am a software engineer and cyber security expert with experience in many programming languages. I have over ten years of software development experience. I love systems programming languages, but have written applications at many layers from Assembly to Javascript (to my own dismay). I am passionate about creating simple, elegant and abstract frameworks to automate as much as possible. In my day job, I have experience in the Security Operations Center, Incident Response and Red Team."""
 
 [params.contacts]
@@ -18,11 +19,10 @@ disableKinds = ["taxonomy", "term"]
   gitlab = "caleb.stewart"
   linkedin = "calebjstewart"
   twitter = "calebjstewart"
-  discord = "CalebStewart#0669"
 
 [params.actions.resume]
   name = "Resume"
-  url = "https://github.com/calebstewart/resume"
+  url = "/resume"
 
 [params.actions.source]
   name = "Site Source"

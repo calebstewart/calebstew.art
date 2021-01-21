@@ -1,0 +1,33 @@
+- employer: "Coast Guard Cyber Protection Team"
+  location: "Washington, DC"
+  role: "Mission Element Lead"
+  start: "Nov 2018"
+  end: "Jun 2019"
+  details:
+    - First responder for numerous network security incidents threatening National Critical Infrastructure
+    - Developed SOP and training requirements for incoming personnel.
+    - Procured, configured and deployed state of the art incident response hardware platform.
+- employer: "Coast Guard Security Operations Center"
+  location: "Washington, DC"
+  role: "Infrastructure Support Branch Lead"
+  start: "Nov 2017"
+  end: "Nov 2018"
+  details:
+    - Operation and Maintenance of all network defence infrastructure including Intrusion Prevention and Detection Systems, Data‑Loss Prevention, Web Content Filter, and Firewalls.
+    - Battle Watch Captain supervising security and operational control over all IT systems across the Coast Guard.
+- employer: "Coast Guard Cutter Bertholf"
+  location: "Alameda, CA"
+  role: "Combat Information Center Officer"
+  start: "May 2016"
+  end: "Nov 2017"
+  details:
+    - Responsible for combat and communications equiment and operational planning.
+    - Assistant Command Security Officer ‑ managed physical, information and operational security programs for entire crew.
+- employer: "National Security Agency"
+  location: "Fort Meade, MD"
+  role: "Internship"
+  start: "Jun 2015"
+  end: "Jul 2015"
+  details:
+    - Applied systems‑programming expertise to reverse engineer unknown software and catalague all code‑paths for further analysis.
+    - Performed static and dynamic analysis on malware to identify and report all observed activity.

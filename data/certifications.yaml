@@ -1,0 +1,28 @@
+- name: Offensive Security Certified Professional (OSCP)
+  id: OS-101-017541
+  date: Dec 2018
+  org: Offensive Security
+- name: Exploit Researcher and Advanced Penetration Tester (GXPN)
+  id: 9192230
+  date: Oct 2020
+  org: GIAC
+- name: Offensive Security Certified Expert (OSCE)
+  id: OS-CTP-11344
+  date: Dec 2019
+  org: Offensive Security
+- name: Offensive Security Web Expert (OSWE)
+  id: OS-AWAE-02880
+  date: Feb 2020
+  org: Offensive Security
+- name: Certified Professional Penetration Tester (eCPPT)
+  id: 9831814
+  date: Mar 2020
+  org: eLearnSecurity
+- name: Offensive Security Wireless Professional (OSWP)
+  id: OS-BWA-036075
+  date: Feb 2020
+  org: Offensive Security
+- name: Certified Information Systems Security Professional (CISSP)
+  id: 703304
+  date: Dec 2018
+  org: ISC2

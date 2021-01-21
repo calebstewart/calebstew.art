@@ -1,0 +1,20 @@
+- name: pwncat
+  link: github.com/calebstewart/pwncat
+  role: Creator
+  tools: Python, C, C#
+  description: "Full featured agentless C2 platform built on top of a basic shell providing stable interactive sessions as well as an extensive pluggable API for automated enumeration, persistence, privilege escalation, and report generation."
+- name: Katana
+  link: github.com/johnhammond/katana
+  role: Co-Creator
+  tools: Python
+  description: "Automated Capture the Flag (CTF) problem solver. Implements a multi‑threaded problem identification and solution framework capable of automatically solving cyber security challenges from a variety of categories."
+- name: CTF4Hire
+  link: github.com/ctf4hire
+  role: "Lead System Engineer, Challenge Developer"
+  tools: "Python, Kubernetes, C, Assembly, GKE"
+  description: "Designed and implemented scalable automated event infrastructure utilizing Kubernetes on Google Cloud Platform supporting over 5000 simultaneous players with personally assigned challenge machines. Held events for multiple worldwide conferences and companies including HackerOne, BSidesBoston and GrimmCon."
+- name: StewieOS
+  link: github.com/calebstewart/stewieos
+  role: "Creator"
+  tools: "x86 Assembly, C"
+  description: "Demonstrated expertise in low‑level software and hardware programming. Designed and implemented POSIX‑like kernel for the x86 family of processors. Full multitasking support. Custom device drivers for common hardware as well as implementations of common userland utilities."
