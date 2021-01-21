@@ -1,5 +1,5 @@
 theme = "awesome-identity"
-baseURL = "https://calebstewart.github.io"
+baseURL = "https://calebstew.art"
 title = "$ uname -a"
 publishDir = "docs"
 
