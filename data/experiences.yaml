@@ -1,8 +1,8 @@
 - employer: "Coast Guard Cyber Protection Team"
   location: "Washington, DC"
   role: "Mission Element Lead"
-  start: "Nov 2018"
-  end: "Jun 2019"
+  start: "Feb 2019"
+  end: "Jun 2020"
   details:
     - First responder for numerous network security incidents threatening National Critical Infrastructure
     - Developed SOP and training requirements for incoming personnel.
@@ -29,5 +29,5 @@
   start: "Jun 2015"
   end: "Jul 2015"
   details:
-    - Applied systems‑programming expertise to reverse engineer unknown software and catalague all code‑paths for further analysis.
+    - Applied systems‑programming expertise to reverse engineer unknown software and catalog all code‑paths for further analysis.
     - Performed static and dynamic analysis on malware to identify and report all observed activity.
