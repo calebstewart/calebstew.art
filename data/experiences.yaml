@@ -1,3 +1,12 @@
+- employer: "DoD Cyber Protection Team"
+  location: "Fort Meade, MD"
+  role: "Support Element Technical Lead"
+  start: "Jun 2020"
+  end: "Present"
+  details:
+    - Developed and deployed software and hardware load-out for deployable incident response teams.
+    - Developed incident response scenarios to provide analyst training and improve mission effectiveness.
+    - Qualified Mission Commander and Host Analyst.
 - employer: "Coast Guard Cyber Protection Team"
   location: "Washington, DC"
   role: "Mission Element Lead"
