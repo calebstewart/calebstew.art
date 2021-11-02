@@ -1,3 +1,8 @@
+- name: CVE Credits
+  role: Reported
+  link: https://cve.mitre.org
+  tools: ""
+  description: "Disclosed and assisted in remediation of the following CVE IDs: CVE-2021-42258, CVE-2021-42344, CVE-2021-42345, CVE-2021-42346, CVE-2021-42571, CVE-2021-42572, CVE-2021-42573, CVE-2021-42741, CVE-2021-42742."
 - name: pwncat
   link: github.com/calebstewart/pwncat
   role: Creator

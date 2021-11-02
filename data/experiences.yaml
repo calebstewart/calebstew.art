@@ -1,9 +1,19 @@
-- employer: "DoD Cyber Protection Team"
-  location: "Fort Meade, MD"
-  role: "Support Element Technical Lead"
-  start: "Jun 2020"
+- employer: "Huntress Labs"
+  location: "Arlington, VA"
+  role: "Security Researcher"
+  start: "Jul 2021"
   end: "Present"
   details:
+    - Technical expert performing static and dynamic binary analysis of malicious payloads.
+    - Research and development of new features for Huntress platform to extend detection and response capabilities.
+    - Testing partner software to identify, disclose and remediate potential vulnerabilities.
+- employer: "DoD Cyber Protection Team"
+  location: "Fort Meade, MD"
+  role: "Technical Director"
+  start: "Jun 2020"
+  end: "Jul 2021"
+  details:
+    - Lead the research and development of capabilities and tools supporting DoD missions in cyberspace.
     - Developed and deployed software and hardware load-out for deployable incident response teams.
     - Developed incident response scenarios to provide analyst training and improve mission effectiveness.
     - Qualified Mission Commander and Host Analyst.
